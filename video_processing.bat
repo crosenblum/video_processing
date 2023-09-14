@@ -10,9 +10,9 @@ set "ffprobe_found=0"
 set "ffmpeg_found=0"
 
 rem setup different folders for filtering video file processing
-if not exist BACKUPS\*.* md BACKUPS
-if not exist FIXED\*.* md FIXED
-if not exist TESTING\*.* md TESTING
+if not exist %video_path%\BACKUPS\*.* md %video_path%\BACKUPS
+if not exist %video_path%\FIXED\*.* md %video_path%\FIXED
+if not exist %video_path%\TESTING\*.* md %video_path%\TESTING
 
 rem check if ffprobe is installed
 for %%i in (ffprobe.exe) do (
